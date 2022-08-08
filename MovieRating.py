@@ -7,4 +7,14 @@ class MovieRating:
         self.music = music
 
         self.avg = int((self.story + self.music + self.actors) / 3)
-        
+
+        self.myRating = {
+            "Movie Name": self.movie,
+            "Story Rating": self.story,
+            "Actor Rating": self.actors,
+            "Music Rating": self.music
+        }
+
+   
+
+
