@@ -49,10 +49,10 @@ class MovieRating:
                 print(movie)
 
             else:
-                print(movie)
+                print(movie);
 
-review2 = MovieRating("Pursuit of Happines", 5, 3, 5)
-review2._append_data(moviereviews)
-review2.get_avg_star(moviereviews)
+
+review2 = MovieRating("Pursuit of Happines", 1, 3, 5)
+
 
 
