@@ -14,7 +14,7 @@ print("Done !")
 # to_dir = "ENTER THE PATH OF DESTINATION FOLDER(USE " / ") in VSC"
 
 from_dir = "E:/Users/bhupi/Downloads"
-to_dir = "H:/Download Test FIles"
+to_dir = "D:/Kunal Personal"
 
 dir_tree = {
     "Image_Files": ['.jpg', '.jpeg', '.png', '.gif', '.jfif'],
@@ -52,7 +52,7 @@ class FileMovementHandler(FileSystemEventHandler):
                     shutil.move(path1, path3)
                     time.sleep(1)  
 
-        print(event)
+        print(event.src)
         print(event.src_path)
 
 
@@ -75,4 +75,6 @@ observer.start()
 while True:
     time.sleep(2)
     print("running...")
+
+
 
