@@ -59,6 +59,9 @@ while True:
         cv2.putText(
             img, "Lost", (75, 90), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2
         )
+    x, y, w, h = int(bbox[0]), int(bbox[1]), int(bbox[2]), int(bbox[3])
+    c1 = x + int(w / 2)
+    c2 = y + int(h / 2)
 
     goal_track(img, bbox)
     dist = math.sqrt(((c1 - p1) ** 2) + (c2 - p2) ** 2)
