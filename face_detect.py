@@ -15,7 +15,7 @@ for (x,y,w,h) in faces:
 #       cv2.imwrite("face.jpg", roi_color)
 #            
 cv2.imshow('img',img)
-cv2.waitKey(0)
+cv2.waitKey(2)
 
 
 
